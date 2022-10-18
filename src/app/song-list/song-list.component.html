@@ -1,0 +1,38 @@
+
+<!-- Estructura HTML de componente song-list -->
+
+<html>
+
+<div class="header">
+  <a routerLink="/songlist" >PLAYSOUND</a>
+</div>
+
+<div class="center-peke">
+
+  <table class="table table-bordered table-striped">
+    <thead>
+      <tr>
+        <th>Título</th>
+        <th>Artista</th>
+        <th>Duración</th>
+      </tr>
+    </thead>
+
+<tbody>
+  <tr *ngFor="let item of songs">
+    <td>
+      <b routerLink="/song/{{item.id}}">{{item.title}}</b>
+    </td>
+    <td>{{item.artist}}</td>
+    <td>{{item.duration}}</td>
+     </tr>
+</tbody>
+
+  </table>
+
+</div>
+
+<div class="footer">
+</div>
+
+</html>
