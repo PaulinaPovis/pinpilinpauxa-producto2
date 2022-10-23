@@ -25,7 +25,7 @@ export class SongsServices{
       artist: 'Adele',
       year: 2011,
       album: '21',
-      genres: ['Rhythm and blues', 'Soul'],
+      genres: ['Pop,Soul'],
       producer: 'Paul Epworth',
       songwriter: 'Adele Adkins',
       duration:'3:49'
@@ -36,7 +36,7 @@ export class SongsServices{
       artist: 'The Weeknd',
       year: 2019,
       album: 'Blinding Lights',
-      genres: ['Rhythm and blues', 'Soul', 'Synthwave'],
+      genres: ['Soul','Synthwave'],
       producer: 'Max Martin',
       songwriter: 'Abel Tesfaye',
       duration:'3:22'
@@ -114,7 +114,7 @@ export class SongsServices{
       artist: 'The Weeknd',
       year: 2019,
       album: 'Blinding Lights',
-      genres: ['Rhythm and blues', 'Soul', 'Synthwave'],
+      genres: ['Soul', 'Synthwave'],
       producer: 'XO',
       songwriter: 'Abel Tesfaye',
       duration: '3:22'

@@ -5,16 +5,21 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SongComponent } from './song/song.component';
 import { SongListComponent } from './song-list/song-list.component';
+import { FiltroPipe } from './song-list/pipes/filtro.pipe';
+
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     SongComponent,
-    SongListComponent
+    SongListComponent,
+    FiltroPipe
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
