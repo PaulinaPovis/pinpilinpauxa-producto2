@@ -1,0 +1,14 @@
+<section class="reproductor">
+  <div>
+    <button (click)="play()" class='button play'><img width="40px" src="../../assets/img/play.png"></button>
+    <button (click)="pause()"  class='button pause'><img width="40px" src="../../assets/img/pause.png"></button>
+    <button (click)="stop()" class='button stop'><img width="45px" src="../../assets/img/stop.png"></button>
+  </div>
+  <div class="justify-content-center">
+    <input class="slider" type="range" min="0" max="" value="0">
+    <div class="">
+      <div class="time"><span>tiempo total</span></div>
+      <div class="time"><span>tiempo restante</span></div>
+    </div>
+  </div>
+</section>
