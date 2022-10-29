@@ -67,11 +67,12 @@
     </table>
   </div>
 
-  <app-song *ngIf="songSelected.id > 0" [song]="songSelected"></app-song>
-  <app-interfaz-reproductor></app-interfaz-reproductor>
+  <div *ngIf="songSelected.id > 0">
+    <app-song [song]="songSelected"></app-song>
+    <app-interfaz-reproductor></app-interfaz-reproductor>
+  </div>
 
   <footer>
     <p>Pinpilinpauxa © 2022</p>
-
   </footer>
 </html>
