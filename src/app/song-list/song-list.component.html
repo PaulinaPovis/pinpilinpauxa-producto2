@@ -20,7 +20,7 @@
     <div class="container text-center">
       <div class="row">
         <div class="col-7"></div>
-        <div class="col-2">
+        <div class="col-2 me-3">
           <select [(ngModel)]="artistSelected" name="filtrar" id="filtrar">
             <option value="">Selecciona Artista</option>
             <option *ngFor="let artist of artists" value="{{ artist }}">
@@ -29,7 +29,7 @@
           </select>
         </div>
 
-        <div class="col-2">
+        <div class="col-2 ms-3">
           <select [(ngModel)]="genereSelected" name="filtrar" id="filtrar">
             <option value="">Selecciona Género</option>
             <option *ngFor="let genere of generes" value="{{ genere }}">
@@ -67,11 +67,12 @@
     </table>
   </div>
 
-  <app-song [song]="songSelected"></app-song>
-  <app-interfaz-reproductor></app-interfaz-reproductor>
+  <div *ngIf="songSelected.id > 0">
+    <app-song [song]="songSelected"></app-song>
+    <app-interfaz-reproductor></app-interfaz-reproductor>
+  </div>
 
   <footer>
     <p>Pinpilinpauxa © 2022</p>
-
   </footer>
 </html>
