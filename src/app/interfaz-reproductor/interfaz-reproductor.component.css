@@ -20,10 +20,21 @@ section{
   background-color: rgba(0, 0, 0, 0);
 }
 
-.time{
-   display:inline;
+.timeline{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
+.time, .volume{
+   display:inline;
+   color: #ffffff;
+}
+
+.volume-wrapper{
+  width: 100%;
+  max-width: 300px;
+}
 .slider {
   -webkit-appearance: none;
   width: 100%;
