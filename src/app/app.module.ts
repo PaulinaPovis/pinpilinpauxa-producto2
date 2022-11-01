@@ -9,6 +9,7 @@ import { FiltroPipe } from './song-list/pipes/filtro.pipe';
 
 import { FormsModule } from '@angular/forms';
 import { InterfazReproductorComponent } from './interfaz-reproductor/interfaz-reproductor.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { InterfazReproductorComponent } from './interfaz-reproductor/interfaz-re
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

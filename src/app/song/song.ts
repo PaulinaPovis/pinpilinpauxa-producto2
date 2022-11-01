@@ -9,6 +9,7 @@ export class Song {
   producer: string;
   songwriter: string;
   duration: string;
+  source: string;
 
 
   constructor(){
@@ -22,6 +23,7 @@ export class Song {
     this.producer='';
     this.songwriter='';
     this.duration='';
+    this.source='';
 
 
   }
